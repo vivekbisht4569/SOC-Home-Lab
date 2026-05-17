@@ -1,0 +1,1 @@
+Hands-on cybersecurity home lab for learning SOC operations, attack detection, network analysis, and defensive security engineering using Kali Linux, Windows, VirtualBox, and real-world attack simulations in a sandboxed environment.
