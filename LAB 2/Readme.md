@@ -289,6 +289,3 @@ This lab demonstrated how attackers generate reconnaissance traffic and how defe
 
 ---
 
-# 📖 Author Notes
-
-This project was created as part of hands-on SOC Analyst and Blue Team training to develop practical network monitoring and traffic analysis skills in a controlled lab environment.
