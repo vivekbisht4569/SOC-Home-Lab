@@ -1,4 +1,3 @@
-# 🛡️ SOC Home Lab — Phase 1 Task 2  
 ## Failed Login Detection & Authentication Monitoring
 
 This lab focuses on detecting and investigating failed authentication attempts using Windows Security Logs inside an isolated SOC home lab environment.
