@@ -1,4 +1,3 @@
-# 🛡️ Phase 2 — Task 1
 # Wireshark Basics & Packet Analysis
 
 ## Objective
