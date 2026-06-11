@@ -1,0 +1,248 @@
+# 🛡️ Phase 3 - Task 2B: Sysmon Event ID 3 (Network Connection Monitoring)
+
+## Overview
+
+In this lab, I enabled and investigated **Sysmon Event ID 3 (Network Connection Monitoring)** to understand how Windows records outbound network connections and how SOC analysts correlate processes with network activity.
+
+---
+
+## Objective
+
+The primary objective of this lab was to:
+
+* Enable Sysmon network connection logging.
+* Generate outbound network traffic.
+* Investigate Event ID 3 logs.
+* Identify which process initiated a connection.
+* Analyze destination IP addresses, ports, and protocols.
+* Understand the value of process-to-network correlation in SOC investigations.
+
+---
+
+## Lab Environment
+
+### Tools Used
+
+* Windows 11
+* Sysmon
+* Event Viewer
+* PowerShell
+
+---
+
+## Configuration Validation
+
+Initially, Event ID 3 logs were not being generated because network connection monitoring was disabled in the default Sysmon configuration.
+
+To verify the active configuration:
+
+```cmd
+Sysmon64.exe -c
+```
+
+After applying an updated Sysmon configuration, network connection monitoring became available.
+
+---
+
+## Generating Network Activity
+
+To generate outbound HTTPS traffic, the following PowerShell command was executed:
+
+```powershell
+Test-NetConnection google.com -Port 443
+```
+
+This created a TCP connection to Google's infrastructure over HTTPS.
+
+---
+
+## Investigation Steps
+
+### Open Sysmon Logs
+
+```text
+Event Viewer
+→ Applications and Services Logs
+→ Microsoft
+→ Windows
+→ Sysmon
+→ Operational
+```
+
+### Filter Event ID 3
+
+```text
+Event ID = 3
+```
+
+---
+
+## Event Analysis
+
+### Process
+
+```text
+powershell.exe
+```
+
+**Analysis:**
+
+The network connection was initiated by PowerShell.
+
+---
+
+### User
+
+```text
+LAPTOP-0VFRID7N\vivek
+```
+
+**Analysis:**
+
+The connection was created under the logged-in user account.
+
+---
+
+### Protocol
+
+```text
+TCP
+```
+
+**Analysis:**
+
+The communication used the Transmission Control Protocol.
+
+---
+
+### Destination IP
+
+```text
+2404:6800:4009:819::200e
+```
+
+**Analysis:**
+
+This IPv6 address belongs to Google's infrastructure.
+
+---
+
+### Destination Port
+
+```text
+443
+```
+
+**Analysis:**
+
+Port 443 is used for HTTPS encrypted communication.
+
+---
+
+### Connection Initiated
+
+```text
+True
+```
+
+**Analysis:**
+
+The local host initiated the outbound connection.
+
+---
+
+## Important Observation
+
+PowerShell successfully generated Event ID 3 logs.
+
+The following command did **not** generate Event ID 3:
+
+```cmd
+ping google.com
+```
+
+Reason:
+
+```text
+Ping uses ICMP packets.
+Event ID 3 primarily monitors TCP and UDP network connections.
+```
+
+This demonstrates the difference between network connectivity testing and actual TCP/UDP connection establishment.
+
+---
+
+## Key Learnings
+
+### Event ID 3 Records
+
+* Process Name
+* User Account
+* Source IP Address
+* Destination IP Address
+* Source Port
+* Destination Port
+* Protocol
+* Connection Direction
+
+---
+
+### Process-to-Network Correlation
+
+Sysmon Event ID 3 enables analysts to correlate:
+
+```text
+Process
+   ↓
+Network Connection
+   ↓
+Destination IP
+   ↓
+Port
+```
+
+This visibility is critical during incident response and threat hunting.
+
+---
+
+## SOC Investigation Perspective
+
+Instead of asking:
+
+```text
+Was a connection made?
+```
+
+A SOC analyst asks:
+
+```text
+Which process made the connection?
+Where did it connect?
+Which port was used?
+Was the connection expected?
+```
+
+Event ID 3 provides the necessary telemetry to answer these questions.
+
+---
+
+## Skills Gained
+
+* Sysmon Network Monitoring
+* Event ID 3 Investigation
+* Process-to-Network Correlation
+* Destination IP Analysis
+* Port Analysis
+* HTTPS Traffic Identification
+* Threat Hunting Fundamentals
+* SOC Investigation Methodology
+
+---
+
+## Conclusion
+
+Successfully enabled and investigated **Sysmon Event ID 3 (Network Connection Monitoring)**.
+
+Observed PowerShell establishing an outbound HTTPS connection to Google's infrastructure and learned how Sysmon links processes to network activity.
+
+This event is one of the most valuable telemetry sources for SOC analysts, incident responders, and threat hunters because it provides direct visibility into process-driven network communications.
