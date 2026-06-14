@@ -1,4 +1,4 @@
-# 🛡️ Phase 3 - Task 2B: Sysmon Event ID 3 (Network Connection Monitoring)
+# 🛡️  Sysmon Event ID 3 (Network Connection Monitoring)
 
 ## Overview
 
