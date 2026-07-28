@@ -1,7 +1,5 @@
-# 📂 Lab 07 – FTP Traffic Analysis with Wireshark
+#  FTP Traffic Analysis with Wireshark
 
-> **Category:** Network Traffic Analysis  
-> **Difficulty:** Beginner → Intermediate  
 > **Tools Used:** Wireshark, Kali Linux, Windows CMD, vsFTPd, VirtualBox  
 > **Protocol:** FTP (File Transfer Protocol)  
 > **Focus:** FTP Authentication, Plaintext Credentials, TCP Port 21, Active FTP, Directory Listing Analysis
@@ -357,41 +355,33 @@ This is one of the primary reasons why FTP is considered an insecure protocol fo
 
 ## TCP Handshake
 
-```
-images/tcp_handshake.png
-```
+![alt text](Images/06_tcp_handshake.png)
 
 ---
 
 ## FTP Authentication
 
-```
-images/ftp_login.png
-```
+![alt text](Images/07_ftp_packets.png)
 
 ---
 
 ## Plaintext Password
 
-```
-images/ftp_plaintext_password.png
-```
+
+![alt text](Images/10_password_visible_no_encryption.png)
+
 
 ---
 
 ## FTP Commands
 
-```
-images/ftp_commands.png
-```
+![alt text](Images/04_ftp_login_windows.png)
 
 ---
 
 ## FTP Responses
 
-```
-images/ftp_responses.png
-```
+![alt text](Images/07_ftp_packets.png)
 
 ---
 
