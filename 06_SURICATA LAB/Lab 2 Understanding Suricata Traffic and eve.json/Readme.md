@@ -48,7 +48,7 @@ the configured network interface.
 
 ### Evidence
 
-![](images/02_Start_suricata_engine.png)
+![Suricata Engine Started](images/02_Start_suricata_engine.png)
 
 ---
 
@@ -94,7 +94,7 @@ The ping was allowed to run for a few seconds and then stopped using:
 
 ### Evidence
 
-![](images/01_Kali_Ping.png)
+![Kali Ping](images/01_Kali_Ping.png)
 
 ---
 
