@@ -48,7 +48,7 @@ the configured network interface.
 
 ### Evidence
 
-![Suricata Engine Started](images/02_Start_suricata_engine.png)
+![Suricata Engine Started](Images/02_Start_suricata_engine.png)
 
 ---
 
@@ -94,7 +94,7 @@ The ping was allowed to run for a few seconds and then stopped using:
 
 ### Evidence
 
-![Kali Ping](images/01_Kali_Ping.png)
+![Kali Ping](Images/01_Kali_Ping.png)
 
 ---
 
@@ -122,7 +122,7 @@ human to read directly in the terminal.
 
 ### Evidence
 
-![Raw EVE JSON](images/03_eve_json_file.png)
+![Raw EVE JSON](Images/03_eve_json_file.png)
 
 ---
 
@@ -273,7 +273,7 @@ telemetry easier to read.
 
 ### Evidence
 
-![PowerShell EVE Investigation](images/04_powershell_command.png)
+![PowerShell EVE Investigation](Images/04_powershell_command.png)
 
 ---
 
