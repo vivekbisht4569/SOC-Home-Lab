@@ -261,7 +261,7 @@ suited for processing and SIEM integration.
 
 ### Evidence
 
-![Suricata Fast Log](Images/05_fast_log_alert.png)
+![Suricata Fast Log](Images/10_suricta_fast_log.png)
 
 ---
 
