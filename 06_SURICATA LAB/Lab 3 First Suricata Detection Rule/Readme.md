@@ -1167,7 +1167,7 @@ Shows Suricata running successfully.
 
     Images/01_suricata_engine_started.png
 
-![Suricata Engine Started](Images/01_suricata_engine_started.png)
+![Suricata Engine Started](Images/01_Engine_started.png)
 
 
 ---
@@ -1178,7 +1178,7 @@ Shows Kali generating controlled ICMP traffic toward Windows.
 
     Images/02_kali_icmp.png
 
-![Kali ICMP Traffic](Images/02_kali_icmp.png)
+![Kali ICMP Traffic](Images/10_PING.png)
 
 
 ---
@@ -1191,7 +1191,7 @@ Shows the created detection rule:
 
     Images/03_lab3_detection_rule.png
 
-![Lab 03 Detection Rule](Images/03_lab3_detection_rule.png)
+![Lab 03 Detection Rule](Images/04_local_rule.png)
 
 
 ---
@@ -1202,7 +1202,7 @@ Shows that the rule was successfully loaded.
 
     Images/04_rule_test.png
 
-![Rule Configuration Test](Images/04_rule_test.png)
+![Rule Configuration Test](Images/05_Rule_checkup.png)
 
 
 ---
@@ -1219,7 +1219,7 @@ and:
 
     Images/05_lab3_fastlog_alert.png
 
-![Lab 03 Alert](Images/05_lab3_fastlog_alert.png)
+![Lab 03 Alert](Images/02_fast_log.png)
 
 
 ---
@@ -1232,7 +1232,7 @@ Shows the alert inside:
 
     Images/06_eve_json_alert.png
 
-![EVE JSON Alert](Images/06_eve_json_alert.png)
+![EVE JSON Alert](Images/08_eve.json_file.png)
 
 
 ---
@@ -1251,7 +1251,7 @@ Shows the extracted fields:
 
     Images/07_powershell_alert_extraction.png
 
-![PowerShell Alert Extraction](Images/07_powershell_alert_extraction.png)
+![PowerShell Alert Extraction](Images/09_Format-TABLE.png)
 
 
 ---
