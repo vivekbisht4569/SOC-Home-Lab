@@ -1,0 +1,1 @@
+A lightweight, highly effective Windows service, Sysmon monitors and logs profound system activity like process creations, network connections, and file changes directly to the Windows Event Log. It is an essential tool for threat hunting, incident response, and 
