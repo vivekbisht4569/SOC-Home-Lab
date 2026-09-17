@@ -125,7 +125,7 @@ Final entry:
 
     Images/01_udp_activity_rule.png
 
-![UDP Activity Rule](Images/01_udp_activity_rule.png)
+![UDP Activity Rule](Images/01_rule_created.png)
 
 ---
 
@@ -149,7 +149,7 @@ Important output:
 
     Images/02_udp_rule_test.png
 
-![UDP Rule Test](Images/02_udp_rule_test.png)
+![UDP Rule Test](Images/02_rule_check.png)
 
 ---
 
@@ -169,7 +169,7 @@ The Suricata window was kept running while traffic was generated from Kali.
 
     Images/03_suricata_engine_started.png
 
-![Suricata Engine Started](Images/03_suricata_engine_started.png)
+![Suricata Engine Started](Images/03_engine_started.png)
 
 ---
 

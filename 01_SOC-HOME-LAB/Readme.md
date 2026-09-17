@@ -1,6 +1,6 @@
 # SOC-Home-Lab
 
-A practical cybersecurity home lab focused on SOC analysis, attack simulation, Windows log analysis, and detection engineering using Kali Linux, Windows 11, and VirtualBox in an isolated sandbox environment.
+A practical cybersecurity home lab focused on SOC analysis, attack simulation, Windows log analysis, and detection engineering using Kali Linux, Windows 11, and VirtualBox in an isolated sandbox environment.git push origin main --force
 
 ---
 
