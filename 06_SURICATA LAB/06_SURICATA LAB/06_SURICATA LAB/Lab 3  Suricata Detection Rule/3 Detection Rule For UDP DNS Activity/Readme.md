@@ -214,7 +214,7 @@ Traffic generated:
 
     Images/04_kali_udp_traffic.png
 
-![Kali UDP Traffic](Images/04_kali_udp_traffic.png)
+![Kali UDP Traffic](Images/04_kali_udp_ping.png)
 
 ---
 
