@@ -250,7 +250,7 @@ This proved that the UDP packet was actually reaching the Windows interface.
 
     Images/05_tshark_udp_capture.png
 
-![TShark UDP Capture](Images/05_tshark_udp_capture.png)
+![TShark UDP Capture](Images/05_t-shark_capture.png)
 
 ---
 
@@ -282,7 +282,7 @@ Investigation chain:
 
     Images/06_eve_json_udp.png
 
-![EVE JSON UDP](Images/06_eve_json_udp.png)
+![EVE JSON UDP](Images/06_eve.json.png)
 
 ---
 
@@ -310,7 +310,7 @@ The EVE JSON alert was used to investigate:
 
     Images/07_udp_activity_alert.png
 
-![UDP Activity Alert](Images/07_udp_activity_alert.png)
+![UDP Activity Alert](Images/07_fast_log.png)
 
 ---
 
@@ -347,7 +347,7 @@ It is detecting a specific traffic pattern:
 
     Images/08_udp_specificity_test.png
 
-![UDP Specificity Test](Images/08_udp_specificity_test.png)
+![UDP Specificity Test](Images/08_udp_spcefic_test.png)
 
 ---
 
