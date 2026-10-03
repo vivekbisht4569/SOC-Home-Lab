@@ -36,3 +36,27 @@ dest_ip  → 192.168.56.1
 proto    → UDP
 
 ```
+Let's test it
+
+Run:
+```bash
+Get-Content C:\Suricata\log\eve.json -Tail 1 | ForEach-Object { $_ | ConvertFrom-Json }
+
+```
+
+ ForEach-Object
+
+This is our first new concept.
+
+Suricata's eve.json contains many JSON lines.
+
+Conceptually:
+
+```bash
+LINE 1 → JSON event
+LINE 2 → JSON event
+LINE 3 → JSON event
+LINE 4 → JSON event
+
+```
+
