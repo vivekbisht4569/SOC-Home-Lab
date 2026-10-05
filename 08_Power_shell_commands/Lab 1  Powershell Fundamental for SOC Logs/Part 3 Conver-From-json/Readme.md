@@ -60,3 +60,15 @@ LINE 4 → JSON event
 
 ```
 
+ForEach-Object means:
+Take each object that comes through the pipeline and do something with it.
+
+Basic structure:
+
+```bash
+
+ForEach-Object { something }
+
+```
+
+The { } contains the action we want to perform.
