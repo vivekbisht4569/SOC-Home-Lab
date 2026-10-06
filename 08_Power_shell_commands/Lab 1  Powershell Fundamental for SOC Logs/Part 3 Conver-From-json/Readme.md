@@ -72,3 +72,19 @@ ForEach-Object { something }
 ```
 
 The { } contains the action we want to perform.
+
+
+
+ What is $_?
+
+This is extremely important.
+
+Inside:
+
+```bash
+
+ForEach-Object { $_ }
+
+```
+
+
