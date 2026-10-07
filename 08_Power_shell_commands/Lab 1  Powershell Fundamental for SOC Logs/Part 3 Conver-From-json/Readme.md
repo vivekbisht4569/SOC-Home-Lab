@@ -120,3 +120,40 @@ basically means:
 
 For each item, give me the current item.
 
+Now combine the pieces
+Look at:
+
+```bash
+Get-Content C:\Suricata\log\eve.json -Tail 1 |
+ForEach-Object {
+    $_ | ConvertFrom-Json
+                              }
+
+```
+
+Read it from left to right
+
+```bash
+
+   Get-Content
+      ↓
+   Read eve.json
+      ↓
+   -Tail 1
+      ↓
+   Take the last line
+      ↓
+   |
+      ↓
+   ForEach-Object
+      ↓
+   Take the current line ($_)
+      ↓
+   ConvertFrom-Json
+      ↓
+   Turn JSON text into a PowerShell object
+
+
+
+```
+
