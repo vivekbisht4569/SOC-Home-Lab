@@ -86,5 +86,37 @@ Inside:
 ForEach-Object { $_ }
 
 ```
+$_ means:
+the current item
 
+Imagine:
+
+```bash
+
+Line 1
+Line 2
+Line 3
+
+```
+
+Powershell Processes them:
+
+```bash
+
+$_ = Line 1
+$_ = Line 2
+$_ = Line 3
+
+```
+
+So:
+
+```bash
+
+ForEach-Object { $_ }
+
+```
+basically means:
+
+For each item, give me the current item.
 
