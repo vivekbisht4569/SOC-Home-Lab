@@ -157,3 +157,55 @@ Read it from left to right
 
 ```
 
+# Overall Suricata + PowerShell Investigation Methodology
+
+```bash
+
+1. UNDERSTAND THE DETECTION REQUIREMENT
+        ↓
+2. DEFINE THE EXPECTED TRAFFIC
+        ↓
+3. BUILD THE SURICATA RULE
+        ↓
+4. SAVE THE RULE IN local.rules
+        ↓
+5. TEST SURICATA CONFIGURATION
+        ↓
+6. START SURICATA
+        ↓
+7. GENERATE CONTROLLED TRAFFIC
+        ↓
+8. VERIFY THE PACKET WITH TSHARK/WIRESHARK
+        ↓
+9. CHECK SURICATA TELEMETRY
+        ↓
+10. IDENTIFY THE SOC QUESTION
+        ↓
+11. IDENTIFY THE REQUIRED DATA/FIELDS
+        ↓
+12. BUILD THE POWERSHELL QUERY
+        ↓
+13. READ THE LOG
+        ↓
+14. CONVERT JSON
+        ↓
+15. FILTER THE REQUIRED EVENTS
+        ↓
+16. SELECT THE REQUIRED FIELDS
+        ↓
+17. FORMAT THE OUTPUT
+        ↓
+18. INVESTIGATE THE ALERT
+        ↓
+19. CHECK CONTEXT
+        ↓
+20. CLASSIFY THE EVENT
+        ↓
+21. TEST RULE SPECIFICITY
+        ↓
+22. DOCUMENT THE RESULT
+
+
+
+
+```
